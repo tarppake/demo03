@@ -13,11 +13,11 @@ namespace WasherApplication
             Washer washer = new Washer();
             washer.IsOn = true;
             washer.Temperature = 40;
-            washer.Speed = "1200 rpm";
+            washer.Speed = 1200;
             washer.On();
 
-            Console.WriteLine("Water temperature is: " + washer.Temperature);
-            Console.WriteLine("Sling speed is: " + washer.Speed);
+            Console.WriteLine("Water temperature is: " + washer.Temperature + " °C");
+            Console.WriteLine("Sling speed is: " + washer.Speed + "rpm");
 
 
 
