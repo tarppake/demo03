@@ -8,15 +8,10 @@ namespace WasherApplication
 {
     class Washer
     {
-        public bool IsOn { get; set; }
         public int Speed { get; set; }
         public int Temperature { get; set; }
 
-        public void On()
-        {
-            Console.WriteLine("Washer is on");
-        }
-
+       
 
         //method to +speed
         public void Accelerate()
@@ -31,11 +26,14 @@ namespace WasherApplication
         }
 
         // method to + temperature
-
+        public void Temperatureup()
+        {
+            Temperature += 10;
+        }
 
         // method to - temperature
-
-
-
-    }
+        public void Temperaturedown()
+        {
+            Temperature -= 10;
+        }
 }

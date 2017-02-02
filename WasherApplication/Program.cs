@@ -11,7 +11,7 @@ namespace WasherApplication
         static void Main(string[] args)
         {
             Washer washer = new Washer();
-            washer.IsOn = true;
+            
             washer.Temperature = 40;
             washer.Speed = 1200;
             washer.On();
